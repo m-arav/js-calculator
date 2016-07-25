@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="../lib/jasmine-2.4.1/jasmine.css">
+    <script src="../lib/jasmine-2.4.1/jasmine.js"></script>
+    <script src="../lib/jasmine-2.4.1/jasmine-html.js"></script>
+    <script src="../lib/jasmine-2.4.1/boot.js"></script>
+    <!-- include source files here... -->
+    <script type="text/javascript" src="calc.js" ></script>
+
+    <!-- include spec files here... -->
+    <script src="../spec/calcSpec.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title> Calculator </title>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+
+      <form name="myform" action="#" method="post">
+          <label>
+            Number 1
+            <input type="text" name="num1" placeholder="Number 1" required>
+          </label>
+          <br>
+
+          <label>
+            Operator
+            <br>
+            <input type="radio" name="operator" value="add" checked> + <br>
+            <input type="radio" name="operator" value="sub"> - <br>
+            <input type="radio" name="operator" value="mul"> * <br>
+            <input type="radio" name="operator" value="div"> / <br>
+          </label>
+
+          <label>
+            Number 2
+            <input type="text" name="num2" placeholder="Number 2" required>
+          </label>
+          <br>
+        <button type="button" onclick="getnum()">Submit</button>
+        <label>
+          <p id="result">Result </p>
+        </label>
+      </form>
+
+    </div>
+
+  </body>
+
+</html>
