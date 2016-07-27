@@ -2,6 +2,9 @@
 describe("A calculator", function() {
 
 
+  beforeEach(function(){
+    loadFixtures('../../../index.html');
+  });
   it("adds 2 values ", function() {
     document.forms["myform"]["num1"].value = "1";
     document.forms["myform"]["num2"].value = "1";
